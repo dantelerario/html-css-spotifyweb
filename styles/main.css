@@ -38,6 +38,7 @@ body {
 .sidebar-top .nav-div ul {
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
 }
 
 .sidebar-top .nav-div ul li{
@@ -81,6 +82,21 @@ body {
 .sidebar-top h4 {
   font-size: 14px;
 }
+
+.active-left {
+  position: relative;
+}
+
+.active-left::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  height: 25px;
+  transform: translateX(-50%);
+  border-left: 3px solid #009318;
+  padding-right: 30px;
+}
 /* SIDERBAR TOP END*/
 
 /* SIDERBAR BOTTOM */
@@ -92,23 +108,38 @@ body {
 
 .sidebar-bottom h6 {
   padding: 15px 0;
+}
+
+.underscore {
   position: relative;
 }
 
-.siderbar-bottom h6:before {
+.underscore::before {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   height: 1px;
-  width: 75%;
-  transform: translateX(-50%);
-  border-bottom: 0.5px solid #898989;
+  width: 80%;
+  border-bottom:0.5px solid #898989;
 }
 
 .sidebar-bottom img {
-  width: 10%;
+  width: 15%;
+  padding: 10px 0 0 5px;
 }
+
+.account-sidebar {
+  padding: 10px 0 10px 0;
+}
+
+.account-sidebar .account-name {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 0 0 10px;
+}
+/* SIDERBAR BOTTOM END */
 
 /* CONTENT */
 
