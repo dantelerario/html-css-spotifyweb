@@ -20,6 +20,26 @@
   padding: 10px 0;
 }
 
+.pad-top-bot20 {
+  padding: 20px 0;
+}
+
+.margin-left-5 {
+  margin-left: 5px;
+}
+
+.in-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
 /* @MEDIA */
 
 /* XS */
