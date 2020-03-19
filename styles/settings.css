@@ -1,0 +1,44 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITIES */
+
+.ul-nostyle {
+  list-style: none;
+}
+
+.pad-top-bot20 {
+  padding: 20px 0;
+}
+
+/* @MEDIA */
+
+/* XS */
+@@media screen and (min-width: px) {
+
+}
+
+/* SM */
+@@media screen and (min-width: 600px) {
+
+}
+
+/* MD */
+@@media screen and (min-width:1024px) {
+
+}
+
+/* LG */
+@@media screen and (min-width: 1200px) {
+
+}
+
+/* XL */
+@@media screen and (min-width: px) {
+
+}
