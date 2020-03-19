@@ -3,6 +3,7 @@
 body {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
+    color: #898989;
 }
 
 /* LAYOUT */
@@ -48,18 +49,23 @@ body {
 
 .sidebar-top img {
   width: 65%;
+  padding-right: 5px;
 }
 
 .sidebar-top .nav-div img {
   width: 15%;
 }
 
+.nav-div.nav-padding a {
+  padding: 5px 0;
+  padding-left: 0;
+}
+
 .sidebar-top .nav-div a {
   text-decoration: none;
   color: #898989;
   font-weight: 500;
-  font-size: 12px;
-  padding-left: 5px;
+  font-size: 13px;
 }
 
 .sidebar-top .nav-div a:hover {
@@ -69,16 +75,39 @@ body {
 .sidebar-top .nav-div i {
   font-size: 40px;
   color: #898989;
+  padding-right: 8px;
 }
 
+.sidebar-top h4 {
+  font-size: 14px;
+}
+/* SIDERBAR TOP END*/
 
-
-
-
+/* SIDERBAR BOTTOM */
 
 .sidebar-bottom {
-    height: 80px; /*debug*/
-    background: #222;
+  background: #000;
+  padding-left: 10px;
+}
+
+.sidebar-bottom h6 {
+  padding: 15px 0;
+  position: relative;
+}
+
+.siderbar-bottom h6:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 75%;
+  transform: translateX(-50%);
+  border-bottom: 0.5px solid #898989;
+}
+
+.sidebar-bottom img {
+  width: 10%;
 }
 
 /* CONTENT */
@@ -161,12 +190,12 @@ body {
 }
 
 .active:before {
-  content : "";
+  content: "";
   position: absolute;
-  left    : 50%;
-  bottom  : 0;
-  height  : 1px;
-  width   : 25%;
+  left: 50%;
+  bottom: 0;
+  height: 1px;
+  width: 25%;
   transform: translateX(-50%);
   border-bottom: 3px solid #009318;
 }
