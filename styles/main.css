@@ -184,6 +184,10 @@ body {
 }
 /* CONTENT TOP BAR END */
 
+#content {
+
+}
+
 /* SCROLLABLE */
 #content .scrollable {
     position: absolute;
@@ -239,21 +243,27 @@ body {
 /* CONTENT CATEGORY */
 
 .content-category {
-
 }
 
 .content-category .albums {
   display: flex;
-  flex-flow: row wrap;
-  margin: 10px 0 0;
+  justify-content: flex-start;
+  flex-flow: row;
+  margin: 10px auto 0;
+}
+
+.img {
+  display: flex;
+  flex-basis: 16%;
 }
 
 .content-category .albums .album {
   display: flex;
   flex-direction: column;
-  margin: 10px 10px 0 0;
-  width: calc(96% / 6);
+  position: relative;
   text-align: center;
+  height: auto;
+  margin: 10px 10px 0 0;
 }
 
 .content-category .albums .album h3,
