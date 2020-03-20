@@ -362,20 +362,22 @@ body {
   width: 50px;
 }
 
-.bottom-right-span {
-  color: red;
-  cursor: pointer;
-}
-
 #player i {
   font-size: 15px;
   padding: 0 0 5px 0;
 }
 
-#player .active {
-  color: lightgreen;
-}
 
 #bar {
   width: 300px;
+}
+
+.bottom-right {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-right i {
+  margin-right: 5px;
+  font-size: 12px;
 }
