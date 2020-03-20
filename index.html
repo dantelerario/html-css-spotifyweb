@@ -110,7 +110,7 @@
 
                     <section class="content-category">
                         <h2 class="pad-top-bot20">Recently Played</h2>
-                        <div class="albums justify-space-between">
+                        <div class="albums">
                           <div class="album">
                             <div class="img">
                               <img src="img/metal_lifting.jpg" alt="Album">
@@ -204,7 +204,46 @@
         </main>
 
         <!-- Bottom Player -->
-        <footer id="player">Player</footer>
+        <footer id="player" class="text-center">
+          <div class="bottom-left">
+            <ul class="bottom-left-ul">
+              <li>
+                <img class="block" src="img/sinister.jpeg" alt="Sinister">
+              </li>
+              <li>
+                <h6>Sinister</h6>
+                <span class="block">Brano Nome</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-center">
+            <div class="row">
+              <ul class="bottom-center-ul">
+                <li>
+                  <i class="fas fa-random"></i>
+                </li>
+                <li>
+                  <i class="fas fa-step-backward"></i>
+                </li>
+                <li>
+                  <i class="far fa-play-circle"></i>
+                </li>
+                <li>
+                  <i class="fas fa-step-forward"></i>
+                </li>
+                <li>
+                  <i class="fas fa-redo-alt"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="row">
+              <progress id="bar" value="32" max="100">32%</progress>
+            </div>
+          </div>
+          <div class="bottom-right">
+            <span class="bottom-right-span">End Meeting</span>
+          </div>
+        </footer>
     </div>
 
 </body>

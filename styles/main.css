@@ -249,6 +249,7 @@ body {
 .content-category .albums {
   display: flex;
   flex-flow: row;
+  align-content: center;
   flex-wrap: wrap;
   margin: 10px auto 0;
   text-align: center;
@@ -269,6 +270,7 @@ body {
 .content-category .albums .album h3,
 .content-category .albums .album h6 {
   padding: 10px 0 0;
+  flex-wrap: wrap;
 }
 
 .radius {
@@ -307,7 +309,73 @@ body {
 }
 
 /* BOTTOM PLAYER */
+
 #player {
-    height: 80px; /*debug*/
-    background: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  background: #404040;
+  color: #fff;
+  font-size: 12px;
+}
+
+#player h6 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+#player span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #898989;
+  margin-left: 5px;
+}
+
+#player ul {
+  display: flex;
+  list-style: none;
+}
+
+#player .bottom-center ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#player .bottom-center ul {
+  font-size: 18px;
+  justify-content: center;
+}
+
+
+.bottom-left ul {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.bottom-left img {
+  width: 50px;
+}
+
+.bottom-right-span {
+  color: red;
+  cursor: pointer;
+}
+
+#player i {
+  font-size: 15px;
+  padding: 0 0 5px 0;
+}
+
+#player .active {
+  color: lightgreen;
+}
+
+#bar {
+  width: 300px;
 }

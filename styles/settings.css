@@ -48,13 +48,23 @@
   justify-content: center;
 }
 
+.justify-justity {
+  justify-content: justify;
+}
+
+.text-center {
+  text-align: center;
+}
 
 
 /* @MEDIA */
 
 /* XS */
 @media screen and (min-width: px) {
-
+  .content-category .albums .album {
+    margin: 10px 20px 0 0;
+    width: calc((100% / 6) - 20px);
+  }
 }
 
 /* SM */
@@ -69,13 +79,13 @@
 
 /* LG */
 @media screen and (min-width: 1200px) {
-  /* .content-category .albums .album {
+  .content-category .albums .album {
     margin: 10px 20px 0 0;
     width: calc((100% / 6) - 20px);
-  } */
-  .justify-space-between {
-    justify-content: space-between;
   }
+  /* .justify-space-between {
+    justify-content: space-between;
+  } */
 
 }
 
