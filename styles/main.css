@@ -207,12 +207,6 @@ body {
   margin-bottom: 50px;
 }
 
-.content-menu ul li {
-  padding: 8px 20px;
-  position: relative;
-  display: inline-block;
-}
-
 .content-menu ul li a {
   text-decoration: none;
   text-align: center;
@@ -261,10 +255,10 @@ body {
  }
 
 .content-category .albums .album img {
-  /* display: block;
-  width: 100%; */
-  width: 250px;
-  height: auto;
+  display: block;
+  width: 100%;
+  /* width: 250px;
+  height: auto; */
 }
 
 .content-category .albums .album h3,
@@ -350,15 +344,29 @@ body {
   justify-content: center;
 }
 
+#player .bottom-center ul li {
+  display: flex;
+  align-items: center;
+}
 
 .bottom-left ul {
   display: flex;
   flex-direction: row;
   text-align: left;
+  align-items: center;
 }
 
 .bottom-left img {
   width: 50px;
+}
+
+.bottom-left i:first-of-type {
+  margin-left: 50px;
+}
+
+.bottom-left i {
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 #player i {
@@ -379,6 +387,7 @@ body {
 .bottom-right i {
   margin-right: 15px;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .progress {
