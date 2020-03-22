@@ -61,15 +61,20 @@
 
 /* XS */
 @media screen and (min-width:300px) {
-  /* .content-category .albums .album {
-    margin: 10px 20px 0 0;
-    width: calc((100% / 6) - 20px);
-  } */
 
   .content-menu ul li {
     padding: 6px 5px;
     position: relative;
     display: inline-block;
+    justify-content: center;
+  }
+
+  #sidebar-600px {
+    display: flex;
+  }
+
+  #sidebar {
+    display: none;
   }
 }
 
@@ -81,9 +86,10 @@
   }
 
   .content-menu ul li {
-    padding: 8px 5px;
+    padding: 6px 5px;
     position: relative;
     display: inline-block;
+    text-align: center;
   }
 
 }
@@ -100,6 +106,14 @@
     position: relative;
     display: inline-block;
   }
+
+  #sidebar {
+    display: flex;
+  }
+
+  #sidebar-600px {
+    display: none;
+  }
 }
 
 /* LG */
@@ -108,9 +122,6 @@
     margin: 10px 20px 0 0;
     width: calc((100% / 6) - 20px);
   }
-  /* .justify-space-between {
-    justify-content: space-between;
-  } */
 
 }
 

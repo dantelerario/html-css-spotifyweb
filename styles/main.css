@@ -21,10 +21,9 @@ body {
 }
 
 
-/* SIDEBAR */
+/* SIDEBAR 1024 */
 #sidebar {
     flex-basis: 200px;
-    display: flex;
     flex-direction: column;
 }
 
@@ -99,7 +98,60 @@ body {
 }
 /* SIDERBAR TOP END*/
 
-/* SIDERBAR BOTTOM */
+/* SIDEBAR 600px */
+#sidebar-600px {
+  flex-direction: column;
+  flex-basis: 50px;
+}
+
+/* SIDERBAR TOP */
+#sidebar-600px .sidebar-top {
+    flex-grow: 1;
+    padding: 10px;
+    background: #000;
+}
+
+#sidebar-600px .sidebar-top .nav-div ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+#sidebar-600px .sidebar-top .nav-div ul li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#sidebar-600px .sidebar-top img {
+  width: 120%;
+  padding-right: 5px;
+}
+
+
+#sidebar-600px .nav-div.nav-padding a {
+  padding: 0px 0;
+}
+
+.sidebar-top .nav-div a {
+  text-decoration: none;
+  color: #898989;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.sidebar-top .nav-div a:hover {
+  color: #fff;
+}
+
+.sidebar-top .nav-div i {
+  font-size: 40px;
+  color: #898989;
+  padding-right: 8px;
+}
+/* SIDERBAR 600 END */
+
+/* SIDERBAR BOTTOM 1024+*/
 
 .weight400 {
   font-weight: 400;
@@ -113,11 +165,11 @@ body {
   padding: 15px 0;
 }
 
-.underscore {
+#sidebar .underscore {
   position: relative;
 }
 
-.underscore::before {
+#sidebar .underscore::before {
   content: "";
   position: absolute;
   left: 0;
@@ -137,6 +189,38 @@ body {
 }
 
 .account-sidebar .account-name {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 0 0 10px;
+}
+/* SIDERBAR BOTTOM END */
+
+/* SIDERBAR BOTTOM 600*/
+
+#sidebar-600px .sidebar-bottom {
+  background: #000;
+  padding-left: 10px;
+}
+
+#sidebar-600px .underscore {
+  position: relative;
+}
+
+#sidebar-600px .underscore i {
+  font-size: 35px;
+}
+
+#sidebar-600px .sidebar-bottom img {
+  width: 110%;
+  padding: 10px;
+}
+
+#sidebar-600px .account-sidebar {
+  padding: 10px;
+}
+
+#sidebar-600px .account-sidebar .account-name {
   color: #FFF;
   font-size: 15px;
   font-weight: 600;
@@ -398,4 +482,20 @@ body {
 #volume {
   width: 50px;
   height: 8px;
+}
+
+progress[value] {
+   /* Reset the default appearance */
+   -moz-appearance: none;
+   appearance: none;
+
+   /* leave defaults in for other browsers */
+   background-size: 35px 20px, 100% 100%, 100% 100%;
+   color: red;
+}
+
+progress[value]::-webkit-progress-bar {
+   /*border-radius: 2px; */
+   background-size: 35px 20px, 100% 100%, 100% 100%;
+   color: red;
 }
